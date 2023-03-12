@@ -1,0 +1,94 @@
+<?php
+  if(isset($_POST['submit']))
+  {
+  print_r($_POST['nome']);
+  print_r($_POST['email']);
+  print_r($_POST['endereco']);
+  print_r($_POST['telefone']);
+  print_r($_POST['observacoes']);
+  }
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d0f3b1704b.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto+Flex:opsz,wght@8..144,200;8..144,400&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Contato</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo">
+      </div>
+      
+      <ul class="menu">
+        <li><a href="home.html" class="menu-btn">Home</a></li>
+        <li><a href="blog.html" class="menu-btn">Blog</a></li>
+        <li><a href="contato.html" class="menu-btn">Contato</a></li>            
+      </ul>
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>              
+      </div>          
+    </div>     
+  </nav> 
+
+
+
+    <main class="container">
+      <form class="form-adm" action="formulario.php" method="post">
+        <div class="row-input">
+            <div class="column">
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                <label>e-mail</label>
+                <input type="e-mail" name="e-mail" id="e-mail" placeholder="Seu melhor e-mail">
+                <label>Endereço</label>
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço completo">
+                <label>Telefone</label>
+                <input type="text" name="telefone" id="telefone" placeholder="Telefone">
+                <label>Observações</label>
+                <textarea id="Observações" placeholder="Observações" rows="5" cols="50"></textarea>                    
+            </div>
+        </div>
+        <button type="button" class="botao" name="acao" value="Cadastrar">Cadastrar</button>
+    </form>
+
+    </main>
+
+
+
+    <footer>
+      <div class="social">
+        <ul>
+          <a href="https://www.linkedin.com/in/rafael-tadeu-damico-da-fonseca-271801236/ " target="_blank">
+            <img src="/images/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://www.instagram.com/rafaelfonseca_cd/ " target="_blank">
+            <img src="/images/instagram.png" alt="Instagram">
+          </a>
+          <a href="http://wa.me/+5511952829087" target="_blank">
+            <img src="/images/whatsapp.png" alt="WhatsApp">
+          </a>
+        </ul>
+        
+      </div>
+      
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d0f3b1704b.js" crossorigin="anonymous"></script>
+    <script src="./js/custom.js"></script>
+    
+</body>
+</html>
